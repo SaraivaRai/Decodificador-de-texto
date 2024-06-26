@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+        <img class="cabecalho__logo" src="assets/icon.png" alt="logo">        
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="bloco__entrada">
+        <div>
+        <textarea name="entrada__texto" id="texto" cols="30" rows="15" placeholder="Digite seu texto aqui!"></textarea><br>        
+        <label><img src="assets/bi_exclamation-circle-fill.png" alt="Exclamacao">apenas letras minúsculas e sem caracteres especiais.</label>
+    </div>
+    <div id="botoes__acao">    
+        <button class="botoes" onclick="botaoCripto()">Criptografar</button>
+        <button class="botoes" onclick="botaoDescripto()">Descriptografar</button>
+    </div>
+    </section>
+        <section class="bloco__saida">
+    <div id="saida__mensagemRetorno">
+        <img src="assets/High quality products 1 1.svg" alt="imagem de busca">
+        <h1>Nenhuma mensagem encontrada</h1>
+        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+    </div>
+  
+    <div id="saida__textoRetorno">
+        <textarea name="name_output" id="retorno" cols="25" rows="15" hidden disabled></textarea>
+        <button type="button" class="botoes" id="copiar" onclick="copiarTexto()"> Copiar</button>
+  </section>
+    </div>
+
+    <script src="script.js"></script>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__redes">
+            <a href="https://www.linkedin.com/in/rai-saraiva/"><img src="assets/linkedin.png" alt="Linkedin image"></a>
+            <a href="https://github.com/SaraivaRai"><img src="assets/github.png" alt="Github image"></a>
+    </div>
+        <p class="rodape__autoria">Desenvolvido por Rai Saraiva</p>
+
+    </footer>
+    
+</body>
+</html>

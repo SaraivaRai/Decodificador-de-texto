@@ -1,0 +1,303 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    background: #cedef7;
+    background-size: 200rem;
+}
+
+.cabecalho {
+    display: flex;
+    margin: 2rem;
+    width: 100%;
+    max-width: 40px;
+    min-width: 40px;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 2rem;
+    gap: 3rem;
+}
+
+.bloco__entrada {
+    width: 50%;
+    display: flex;
+    flex-direction: column;   
+    border-radius: 40px;
+    padding: 2rem;
+    margin: 2rem;
+    gap: 8rem;
+    margin-bottom: 2rem;
+}
+
+ #texto {
+    font-size: 2.18rem;
+    font-family:  "Roboto", sans-serif;
+    color: #436dbb;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0; 
+    
+}
+
+::placeholder {
+    font-family: "Roboto", sans-serif;
+    color: #436dbb;
+    font-size: 2rem;
+}
+
+label {
+    font-family: "Roboto",
+    sans-serif;
+    color:black;
+    font-size: 1.25rem;
+}
+
+
+.botoes__acao {
+    display: flex;
+    gap: 5%;
+}
+
+.botoes{
+    width: 100%;
+    background: rgb(96, 175, 240);
+    border-radius: 25px;
+    border: solid #607aac 3px;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(8, 16, 116);
+    font-size: 1.40rem;
+    font-weight: 700;
+}
+
+
+.botoes:hover {
+    color: rgb(169, 201, 250); 
+    background: #436dbb;
+}
+
+
+
+.bloco__saida {
+    display: flex;
+    width: 50%;
+    
+    flex-direction: column;
+    background-color: rgb(169, 201, 250);
+    border: none;
+    align-items: center;
+    border-radius: 40px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+
+ #saida__mensagemRetorno {   
+    display: flex;
+    text-align: center; 
+    align-items: center;
+    font-family:  "Roboto", sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 40px;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+#saida__mensagemRetorno img {
+    border-radius: 40px;
+    width: 45%;
+}
+
+#saida__mensagemRetorno h1 {
+    color:  #000000;
+    font-size: 1.50rem;
+}
+
+#saida__mensagemRetorno p {
+    color: #000000;
+    font-size: 1.20rem;
+}
+
+#saida__textoRetorno {
+    display: inline-block; 
+    flex-direction: column;
+}
+
+#retorno {    
+    width: 100%;
+    text-align: justify;
+    padding-top: 2rem;
+    font-size: 1.90rem;
+    font-family:  "Roboto", sans-serif;
+    color: #436dbb;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0; 
+    margin-bottom: 4rem;
+    
+}
+#copiar {
+    width: 100%;
+    background: rgb(96, 175, 240);
+    border-radius: 25px;
+    border: solid #607aac 3px;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(8, 16, 116);
+    font-size: 1.40rem;
+    font-weight: 700;
+}
+
+
+#copiar:hover {
+    color: rgb(169, 201, 250); 
+    background: #436dbb;
+}
+
+.rodape {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(169, 201, 250);
+    gap: 1rem;
+}
+
+.rodape:hover{
+    background-color: rgb(169, 201, 250);
+}
+
+.rodape .rodape__redes{
+    text-decoration: none; 
+    width: auto;
+   
+}
+
+.rodape .rodape__autoria{
+    text-decoration: none; 
+    font-size: 1.50rem;
+    color: #436dbb;
+    font-family: "Roboto";
+    font-weight: 800;
+}
+
+@media (max-width:1420px){
+    #saida__mensagemRetorno img{
+        width: 70%;
+    }
+
+    #saida__mensagemRetorno h1{
+        color: #000000;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    #saida__mensagemRetorno p{
+        color: #000000;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:1010px){
+
+    .cabecalho__logo{
+        width: 45px;
+    }
+
+    .apresentacao{      
+        width: auto;                                            
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .bloco__entrada{
+        width: auto;
+        padding: 1rem;
+        margin: 1rem;
+        gap: 4rem;
+    }
+
+    #texto{
+        font-size: 1.5rem;
+    }
+
+    ::placeholder{
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+
+    }
+
+    .bloco__saida{
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+      
+    }
+
+    #retorno{
+        font-size: 1.4rem;
+    }
+
+    #saida__mensagemRetorno img{
+        display: none;
+    }
+
+    #saida__mensagemRetorno h1{
+        color: #436dbb;
+        font-size: 1.5rem;
+    }
+    
+    #saida__mensagemRetorno p{
+        color: #436dbb;
+        font-size: 1rem;
+    }
+   
+    .botoes{
+        width: auto;
+        font-size: 1rem;
+    }
+
+    .rodape{
+        width: 100%;
+        
+    }
+    
+    .rodape .rodape__autoria{
+        font-size: 1.2rem;
+    }
+
+ 
+}
